@@ -1,0 +1,8 @@
+{
+  "name": "graphql-book-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juun Pak <june.mintlatte@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
