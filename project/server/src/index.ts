@@ -10,13 +10,13 @@ async function main() {
   const app = express()
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [FilmResolver]
+      resolvers: [FilmResolver],
     }),
-    plugins: [ApolloServerPluginLandingPageLocalDefault()]
+    plugins: [ApolloServerPluginLandingPageLocalDefault()],
   })
 
   await apolloServer.start()
-  apolloServer.applyMiddleware({app})
+  apolloServer.applyMiddleware({ app })
 
   const httpServer = http.createServer(app)
 
@@ -32,4 +32,4 @@ async function main() {
   })
 }
 
-main().catch(err => console.error(err))
+main().catch((err) => console.error(err))
