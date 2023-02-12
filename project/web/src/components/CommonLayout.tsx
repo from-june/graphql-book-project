@@ -1,4 +1,4 @@
-import { BackgroundProps, Box, Flex } from '@chakra-ui/react'
+import { BackgroundProps, Box } from '@chakra-ui/react'
 import Navbar from './nav/Navbar'
 
 interface CommonLayoutProps {
